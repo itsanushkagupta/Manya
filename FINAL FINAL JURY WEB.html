@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Gaming Layout</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    nav {
+      padding: 1rem;
+    }
+    .hero-video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .hover-img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    h3 {
+      margin-top: 2rem;
+    }
+    .game-title {
+      font-family: Impact, sans-serif;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .price {
+      color: #3dda53;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="css/LOGO PNG.png" width="160" alt="Logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+      <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE</a></li>
+      <li class="nav-item"><a class="nav-link" href="about us.html">ABOUT US</a></li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">SIGN UP</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="container my-4">
+  <video class="hero-video" autoplay muted loop controls>
+    <source src="css/videoplayback.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- Recents Section -->
+<div class="container recents">
+  <h3>RECENTS</h3>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 mb-4"><img src="css/GOD OF WAR.jpg" class="img-fluid" alt="God of War" /></div>
+    <div class="col-md-4 col-sm-6 mb-4"><img src="css/DOOM-TheDarkAges_Standard_1920x1080-HD-scaled.jpeg" class="img-fluid" alt="DOOM" /></div>
+    <div class="col-md-4 col-sm-12 mb-4"><img src="css/hades-2-revealed-game-awards-2022_feature.jpg" class="img-fluid" alt="Hades 2" /></div>
+  </div>
+</div>
+
+<!-- Popular Games -->
+<div class="container popular-games">
+  <h3>POPULAR <span style="font-family: Segoe UI, sans-serif;">GAMES</span></h3>
+  <div class="row">
+    <div class="col-12">
+      <img src="css/banner.jpg" class="img-fluid" alt="Banner" />
+    </div>
+  </div>
+</div>
+
+<!-- Poster Section -->
+<div class="container my-4">
+  <a href="learn more/Untitled-3.html">
+    <img src="newsletter/WEBISTE JURY POSTER.jpg" class="img-fluid" alt="Poster">
+  </a>
+  <h4 class="text-center mt-3" style="font-family: Impact;">FEATURED DISCOUNTS</h4>
+</div>
+
+<!-- Discounted Games Grid -->
+<div class="container">
+  <div class="row text-center">
+    <div class="col-6 col-sm-4 col-md-2 mb-4">
+      <img src="DOWN/1.png" class="img-fluid" alt="MotoGP 21">
+      <p class="game-title">MOTOGP 21</p>
+      <p class="price">$200.8</p>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-4">
+      <img src="DOWN/2.png" class="img-fluid" alt="Space Accident">
+      <p class="game-title">SPACE ACCIDENT</p>
+      <p class="price">$200.8</p>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-4">
+      <img src="DOWN/3.png" class="img-fluid" alt="Football Manager">
+      <p class="game-title">FOOTBALL MANAGER</p>
+      <p class="price">$200.8</p>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-4">
+      <img src="DOWN/4.png" class="img-fluid" alt="Wraith Galaxy">
+      <p class="game-title">WRAITH GALAXY</p>
+      <p class="price">$200.8</p>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-4">
+      <img src="DOWN/5.png" class="img-fluid" alt="Medieval Dynasty">
+      <p class="game-title">MEDIEVAL DYNASTY</p>
+      <p class="price">$200.8</p>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-4">
+      <img src="DOWN/6.png" class="img-fluid" alt="Stellar Blade">
+      <p class="game-title">STELLAR BLADE</p>
+      <p class="price">$200.8</p>
+    </div>
+  </div>
+
+  <div class="text-center mb-5">
+    <button class="btn btn-success" onclick="window.location.href='explore.html'">See All</button>
+  </div>
+</div>
+
+<!-- Final 2-Image Row -->
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <img src="2 image last/black-myth-wukong-1l4n1.png" class="img-fluid hover-img" alt="Black Myth Wukong">
+      <p class="game-title">BLACK MYTH WUKONG</p>
+      <p class="price">$500</p>
+    </div>
+    <div class="col-md-6 mb-4">
+      <img src="2 image last/dbc8c55a21688b446a5c57711b726956483a14ef8c5ddb861f897c0595ccb6b5.jpg" class="img-fluid hover-img" alt="Hades">
+      <p class="game-title">HADES</p>
+      <p class="price">$500</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container mb-4">
+  <a href="about us.html">
+    <img src="DOWN/FOOTER.jpg" class="img-fluid" alt="Footer">
+  </a>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
